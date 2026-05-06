@@ -1,0 +1,16 @@
+# Compose-Datei: startet beide Apps mit "docker compose up"
+services:
+
+  frontend:
+    build: ./frontend          # Pfad zum Ordner mit dem Dockerfile
+    image: hello-flask:v1      # Name des gebauten Images
+    container_name: frontend   # fester Name (statt zufallsname)
+    ports:
+      - "5000:5000"            # Host:Container
+
+  pizza-api:
+    build: ./backend
+    image: pizza-api:v1
+    container_name: pizza-api
+    ports:
+      - "6000:6000"
