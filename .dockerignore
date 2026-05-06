@@ -1,0 +1,40 @@
+# Git-Verzeichnis und Verlauf
+.git
+.gitignore
+
+# Python-Cache und Bytecode
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Lokale virtuelle Umgebungen
+venv/
+.venv/
+env/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# OS-Spezifisches
+.DS_Store
+Thumbs.db
+
+# Secrets / lokale Konfiguration (NIE ins Image!)
+.env
+*.env
+secrets/
+
+# Docker selbst
+Dockerfile
+.dockerignore
+
+# Test-/Build-Artefakte
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
